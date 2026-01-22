@@ -269,3 +269,23 @@ textarea{min-height:110px;resize:vertical}
   .topbar-inner{flex-direction:column;gap:6px}
   .form-grid{grid-template-columns:1fr}
 }
+
+/* Fix dropdown UI */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Prevent weird white big dropdown on some browsers */
+select:focus {
+  outline: none;
+  border-color: rgba(56,189,248,.55);
+}

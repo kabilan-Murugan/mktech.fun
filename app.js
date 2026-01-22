@@ -49,14 +49,15 @@ function handleQuoteSubmit(e) {
 `Hi MK Tech 👋
 New Quote Request ✅
 
-👤 Name: ${name}
-📞 Phone: ${phone}
-📧 Email: ${email}
-🛠️ Service: ${service}
-💰 Budget: ${budget || "Not mentioned"}
-📅 Needed Date: ${date || "Not mentioned"}
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
 
-📝 Requirement:
+Service: ${service}
+Budget: ${budget || "Not mentioned"}
+Needed Date: ${date || "Not mentioned"}
+
+Requirement:
 ${message}`;
 
   // 1) Open WhatsApp with prefilled message
