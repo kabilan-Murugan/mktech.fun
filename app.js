@@ -46,8 +46,8 @@ function handleQuoteSubmit(e) {
   const message = document.getElementById("message").value.trim();
 
   const text =
-`Hi MK Tech 👋
-New Quote Request ✅
+`Hi MK Tech
+New Quote Request
 
 Name: ${name}
 Phone: ${phone}
