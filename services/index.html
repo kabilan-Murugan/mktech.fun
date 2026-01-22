@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - MK Tech</title>
+  <meta name="description" content="Poster Designing, Digital Invitations, Social Media Designs, Server Support, Web Hosting, Domain DNS SSL by MK Tech." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="/"><span class="logo-dot"></span>MK Tech</a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/works/">Works</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <button class="btn btn-primary" onclick="openQuote()">Get Quote</button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Services 🛠️</h2>
+      <p>Design + Tech support under one roof.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🎨 Poster Designing</h3>
+        <p>Business, event, ads & promo posters.</p>
+        <button class="btn btn-outline" onclick="openQuote('Poster Designing')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>💌 Digital Invitations</h3>
+        <p>Wedding, birthday & function invites.</p>
+        <button class="btn btn-outline" onclick="openQuote('Digital Invitation')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>📱 Social Media Designs</h3>
+        <p>Instagram posts, banners, thumbnails.</p>
+        <button class="btn btn-outline" onclick="openQuote('Logo / Social Media Design')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>🖥️ Server Support</h3>
+        <p>Windows server setup & troubleshooting.</p>
+        <button class="btn btn-outline" onclick="openQuote('Server Support')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>🌐 Web Hosting Setup</h3>
+        <p>Hosting, cPanel, Plesk, deployment.</p>
+        <button class="btn btn-outline" onclick="openQuote('Web Hosting Setup')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Domain + DNS + SSL</h3>
+        <p>Secure your website properly.</p>
+        <button class="btn btn-outline" onclick="openQuote('Domain + DNS + SSL')">Get Quote</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> MK Tech</p>
+    <p class="small">All-in-one design & tech services</p>
+  </div>
+</footer>
+
+<!-- Quote modal -->
+<!-- PASTE SAME MODAL CODE HERE -->
+ <!-- Quote Modal -->
+<div class="modal" id="quoteModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Request a Quote ✨</h3>
+      <button class="close-btn" onclick="closeQuote()">✕</button>
+    </div>
+
+    <form onsubmit="handleQuoteSubmit(event)">
+      <div class="form-grid">
+        <div class="field">
+          <label>Full Name *</label>
+          <input id="name" required placeholder="Your name" />
+        </div>
+
+        <div class="field">
+          <label>Phone Number *</label>
+          <input id="phone" required placeholder="90437xxxxx" />
+        </div>
+
+        <div class="field">
+          <label>Email *</label>
+          <input id="email" type="email" required placeholder="yourmail@gmail.com" />
+        </div>
+
+        <div class="field">
+          <label>Service *</label>
+          <select id="service" required>
+            <option value="">Select</option>
+            <option>Poster Designing</option>
+            <option>Digital Invitation</option>
+            <option>Logo / Social Media Design</option>
+            <option>Web Hosting Setup</option>
+            <option>Domain + DNS + SSL</option>
+            <option>Server Support</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Budget (optional)</label>
+          <input id="budget" placeholder="Example: ₹499 / ₹999" />
+        </div>
+
+        <div class="field">
+          <label>Needed Date (optional)</label>
+          <input id="date" type="date" />
+        </div>
+
+        <div class="field" style="grid-column:1/-1;">
+          <label>Requirement *</label>
+          <textarea id="message" required placeholder="Tell your requirement clearly..."></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Send Quote</button>
+        <button class="btn btn-outline" type="button" onclick="closeQuote()">Cancel</button>
+      </div>
+
+      <p class="note">
+        ✅ After clicking <b>Send Quote</b>, it will open WhatsApp + also send details to email.
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Hidden Email FormSubmit -->
+<form id="emailForm" action="https://formsubmit.co/janukabi2005@gmail.com" method="POST" style="display:none;">
+  <input type="hidden" name="_subject" value="New Quote Request - MK Tech" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_next" value="https://mktech.fun/contact/" />
+
+  <input id="fs_name" type="hidden" name="Name" />
+  <input id="fs_phone" type="hidden" name="Phone" />
+  <input id="fs_email" type="hidden" name="Email" />
+  <input id="fs_service" type="hidden" name="Service" />
+  <input id="fs_budget" type="hidden" name="Budget" />
+  <input id="fs_date" type="hidden" name="Needed Date" />
+  <input id="fs_message" type="hidden" name="Requirement" />
+</form>
+
+<script src="/app.js"></script>
+
+<script src="/app.js"></script>
+</body>
+</html>

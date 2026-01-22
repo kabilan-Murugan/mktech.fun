@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing - MK Tech</title>
+  <meta name="description" content="Affordable pricing for poster design, digital invitations, hosting and server support." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="/"><span class="logo-dot"></span>MK Tech</a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/works/">Works</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Pricing 💸</h2>
+      <p>Simple & transparent pricing.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🎨 Poster Design</h3>
+        <p><b>₹199 – ₹499</b></p>
+        <button class="btn btn-outline" onclick="openQuote('Poster Designing')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>💌 Digital Invitation</h3>
+        <p><b>₹299 – ₹999</b></p>
+        <button class="btn btn-outline" onclick="openQuote('Digital Invitation')">Get Quote</button>
+      </div>
+
+      <div class="card">
+        <h3>🖥️ Hosting / Server</h3>
+        <p><b>₹499+</b></p>
+        <button class="btn btn-outline" onclick="openQuote('Web Hosting Setup')">Get Quote</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> MK Tech</p>
+  </div>
+</footer>
+
+<!-- Quote Modal -->
+<div class="modal" id="quoteModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Request a Quote ✨</h3>
+      <button class="close-btn" onclick="closeQuote()">✕</button>
+    </div>
+
+    <form onsubmit="handleQuoteSubmit(event)">
+      <div class="form-grid">
+        <div class="field">
+          <label>Full Name *</label>
+          <input id="name" required placeholder="Your name" />
+        </div>
+
+        <div class="field">
+          <label>Phone Number *</label>
+          <input id="phone" required placeholder="90437xxxxx" />
+        </div>
+
+        <div class="field">
+          <label>Email *</label>
+          <input id="email" type="email" required placeholder="yourmail@gmail.com" />
+        </div>
+
+        <div class="field">
+          <label>Service *</label>
+          <select id="service" required>
+            <option value="">Select</option>
+            <option>Poster Designing</option>
+            <option>Digital Invitation</option>
+            <option>Logo / Social Media Design</option>
+            <option>Web Hosting Setup</option>
+            <option>Domain + DNS + SSL</option>
+            <option>Server Support</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Budget (optional)</label>
+          <input id="budget" placeholder="Example: ₹499 / ₹999" />
+        </div>
+
+        <div class="field">
+          <label>Needed Date (optional)</label>
+          <input id="date" type="date" />
+        </div>
+
+        <div class="field" style="grid-column:1/-1;">
+          <label>Requirement *</label>
+          <textarea id="message" required placeholder="Tell your requirement clearly..."></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Send Quote</button>
+        <button class="btn btn-outline" type="button" onclick="closeQuote()">Cancel</button>
+      </div>
+
+      <p class="note">
+        ✅ After clicking <b>Send Quote</b>, it will open WhatsApp + also send details to email.
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Hidden Email FormSubmit -->
+<form id="emailForm" action="https://formsubmit.co/janukabi2005@gmail.com" method="POST" style="display:none;">
+  <input type="hidden" name="_subject" value="New Quote Request - MK Tech" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_next" value="https://mktech.fun/contact/" />
+
+  <input id="fs_name" type="hidden" name="Name" />
+  <input id="fs_phone" type="hidden" name="Phone" />
+  <input id="fs_email" type="hidden" name="Email" />
+  <input id="fs_service" type="hidden" name="Service" />
+  <input id="fs_budget" type="hidden" name="Budget" />
+  <input id="fs_date" type="hidden" name="Needed Date" />
+  <input id="fs_message" type="hidden" name="Requirement" />
+</form>
+
+<script src="/app.js"></script>
+
+<script src="/app.js"></script>
+</body>
+</html>
