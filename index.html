@@ -1,50 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MK Tech</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
+  <title>MK Tech - Poster Design, Digital Invitations, Server Support & Web Hosting</title>
+  <meta name="description" content="MK Tech (mktech.fun) offers Poster Designing, Digital Invitation Creation, Logo & Social Media Designs, Server Support, Web Hosting Setup, Domain & DNS, SSL and Email Setup in Tamil Nadu, India." />
+  <meta name="keywords" content="poster design, digital invitation, wedding invitation, birthday invitation, logo design, social media design, server support, windows server, web hosting, domain dns, ssl setup, tamil nadu" />
+  <meta name="author" content="MK Tech" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (Social Sharing) -->
+  <meta property="og:title" content="MK Tech - Design & Tech Services" />
+  <meta property="og:description" content="Poster Designing • Digital Invitations • Server Support • Web Hosting Setup • Tamil Nadu, India" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mktech.fun/" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://mktech.fun/" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD Structured Data (SEO BOOST) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MK Tech",
+    "url": "https://mktech.fun",
+    "description": "Poster Designing, Digital Invitations, Logo & Social Media Designs, Server Support, Web Hosting, Domain & DNS, SSL and Email Setup.",
+    "areaServed": "Tamil Nadu, India",
+    "email": "janukabi2005@gmail.com",
+    "telephone": "+91-9043792188",
+    "sameAs": [],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
     }
-    .box {
-      max-width: 600px;
-      background: rgba(255,255,255,0.05);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    p { font-size: 1.1rem; opacity: 0.8; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #38bdf8;
-      color: black;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
-    }
-    a:hover { background: #0ea5e9; }
-  </style>
+  }
+  </script>
 </head>
+
 <body>
-  <div class="box">
-    <h1>🚀 MK Tech</h1>
-    <p>Tech Tips • SysAdmin Help • Tools • Tutorials</p>
-    <p>Coming soon... Stay tuned 😎</p>
-    <a href="mailto:janukabi2005@gmail.com">Contact Me</a>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p>📍 Tamil Nadu, India</p>
+      <div class="topbar-links">
+        <a href="mailto:janukabi2005@gmail.com">📧 Email</a>
+        <a href="tel:+919043792188">📞 Call</a>
+      </div>
+    </div>
   </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <span class="logo-dot"></span>
+        <span>MK Tech</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20service%20quote%20%E2%9C%85" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+
+      <button class="menu-btn" aria-label="Open Menu" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#portfolio" onclick="toggleMenu()">Works</a>
+      <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a class="btn btn-primary mobile-btn" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20service%20quote%20%E2%9C%85" target="_blank" rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Modern Designs + Reliable Tech Support 🚀</h1>
+        <p class="hero-sub">
+          We create <strong>Posters</strong>, <strong>Digital Invitations</strong>, and provide
+          <strong>Server Support</strong> + <strong>Web Hosting Setup</strong> for businesses and individuals.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20want%20Poster%20or%20Invitation%20Design%20%E2%9C%A8" target="_blank" rel="noopener">
+            Get Design Now
+          </a>
+          <a class="btn btn-outline" href="#services">
+            View Services
+          </a>
+        </div>
+
+        <div class="trust">
+          <div class="trust-card">
+            <h3>⚡ Fast Delivery</h3>
+            <p>Quick designs + quick support.</p>
+          </div>
+          <div class="trust-card">
+            <h3>🎯 Clean & Pro</h3>
+            <p>Modern styles that look premium.</p>
+          </div>
+          <div class="trust-card">
+            <h3>🛡️ Secure Setup</h3>
+            <p>SSL, DNS, hosting done right.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-box">
+        <div class="glass-card">
+          <h2>What we do ✨</h2>
+          <ul class="checklist">
+            <li>Poster Designing (Events / Business / Ads)</li>
+            <li>Digital Invitations (Wedding / Birthday / Functions)</li>
+            <li>Logo + Social Media Post Designs</li>
+            <li>Domain + DNS + SSL Setup</li>
+            <li>Web Hosting Setup (cPanel / Plesk)</li>
+            <li>Windows Server Support</li>
+          </ul>
+
+          <a class="btn btn-primary full" href="#contact">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Everything you need for design + hosting + support 🔥</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>🎨 Poster Designing</h3>
+          <p>Business posters, event posters, promo designs, ads and more.</p>
+        </article>
+
+        <article class="card">
+          <h3>💌 Digital Invitations</h3>
+          <p>Wedding, birthday, engagement, function invites with modern styles.</p>
+        </article>
+
+        <article class="card">
+          <h3>📱 Social Media Designs</h3>
+          <p>Instagram posts, WhatsApp status posters, banners, thumbnails.</p>
+        </article>
+
+        <article class="card">
+          <h3>🖥️ Server Support</h3>
+          <p>Windows server troubleshooting, maintenance, monitoring and fixes.</p>
+        </article>
+
+        <article class="card">
+          <h3>🌐 Web Hosting Setup</h3>
+          <p>Hosting + cPanel/Plesk setup, website deployment, backups & migration.</p>
+        </article>
+
+        <article class="card">
+          <h3>🔐 Domain + DNS + SSL</h3>
+          <p>Domain mapping, DNS records, SSL setup, business email support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section alt" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <h2>Works / Portfolio</h2>
+        <p>Add your poster samples here (I’ll help you update later)</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <h3>Poster Sample #1</h3>
+          <p>Business / Event Poster</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Invitation Sample #2</h3>
+          <p>Wedding / Birthday Invite</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Social Media Pack #3</h3>
+          <p>Instagram + WhatsApp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <h2>Pricing</h2>
+        <p>Simple pricing. Custom quotes available 💯</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>🎨 Poster Design</h3>
+          <p class="price">₹199 – ₹499</p>
+          <ul>
+            <li>Modern design</li>
+            <li>HD quality</li>
+            <li>Fast delivery</li>
+          </ul>
+          <a class="btn btn-outline full" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20Poster%20Design%20quote%20%E2%9C%85" target="_blank" rel="noopener">Get Poster</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3>💌 Digital Invitation</h3>
+          <p class="price">₹299 – ₹999</p>
+          <ul>
+            <li>Wedding / Birthday</li>
+            <li>Custom theme</li>
+            <li>Shareable link/image</li>
+          </ul>
+          <a class="btn btn-primary full" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20Digital%20Invitation%20quote%20%E2%9C%85" target="_blank" rel="noopener">Get Invite</a>
+        </div>
+
+        <div class="price-card">
+          <h3>🖥️ Hosting + Support</h3>
+          <p class="price">₹499+</p>
+          <ul>
+            <li>Domain + DNS setup</li>
+            <li>SSL + Email support</li>
+            <li>Server troubleshooting</li>
+          </ul>
+          <a class="btn btn-outline full" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20Hosting%20%2B%20Server%20Support%20quote%20%E2%9C%85" target="_blank" rel="noopener">Get Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact MK Tech</h2>
+        <p>Message us on WhatsApp and get a quick quote 🚀</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>📞 Phone</h3>
+          <p><a href="tel:+919043792188">+91 90437 92188</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:janukabi2005@gmail.com">janukabi2005@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>💬 WhatsApp</h3>
+          <p><a href="https://wa.me/919043792188" target="_blank" rel="noopener">Chat Now</a></p>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <a class="btn btn-primary" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20service%20quote%20%E2%9C%85" target="_blank" rel="noopener">
+          WhatsApp for Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MK Tech • mktech.fun</p>
+      <p class="small">Poster Design • Digital Invitations • Server Support • Web Hosting</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="float-whatsapp" href="https://wa.me/919043792188?text=Hi%20MK%20Tech%2C%20I%20need%20a%20service%20quote%20%E2%9C%85" target="_blank" rel="noopener" aria-label="WhatsApp">
+    💬
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function toggleMenu() {
+      const nav = document.getElementById("mobileNav");
+      nav.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
