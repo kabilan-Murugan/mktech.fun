@@ -3,65 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - MK Tech</title>
-  <meta name="description" content="Contact MK Tech for poster design, digital invitations, hosting and server support." />
+  <title>PixelCloud Tech - Design • Hosting • Support</title>
+  <meta name="description" content="PixelCloud Tech provides poster design, digital invitations, server support and web hosting setup in Tamil Nadu, India." />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 
 <header class="header">
   <div class="container header-inner">
-    <a class="logo" href="/"><span class="logo-dot"></span>MK Tech</a>
+    <a class="logo" href="/">
+      <img src="/assets/logo.png" alt="PixelCloud Tech Logo">
+      <span>PixelCloud Tech</span>
+    </a>
+
     <nav class="nav">
       <a href="/services/">Services</a>
       <a href="/works/">Works</a>
       <a href="/pricing/">Pricing</a>
       <a href="/contact/">Contact</a>
     </nav>
+
+    <button class="btn btn-brand" onclick="openQuote()">Get Quote</button>
   </div>
 </header>
 
-<section class="section alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Contact Us 📞</h2>
-      <p>Let’s talk about your requirement.</p>
+<section class="section">
+  <div class="container hero">
+    <div>
+      <h1>Modern Designs + Reliable Tech Support</h1>
+      <p>
+        We create Posters, Digital Invitations, and provide Server Support + Web Hosting Setup
+        for businesses and individuals in Tamil Nadu.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-brand" onclick="openQuote()">Request a Quote</button>
+        <a class="btn" href="/services/">View Services</a>
+      </div>
     </div>
+
+    <div class="card glow">
+      <h3 style="margin:0 0 10px;font-family:Poppins,sans-serif;">What we do ✨</h3>
+      <p class="small" style="margin:0">
+        • Poster Designing (Events / Business / Ads)<br>
+        • Digital Invitations (Wedding / Birthday / Functions)<br>
+        • Logo + Social Media Post Designs<br>
+        • Domain + DNS + SSL Setup<br>
+        • Web Hosting Setup (cPanel / Plesk)<br>
+        • Windows Server Support
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 style="font-family:Poppins,sans-serif;margin:0 0 12px;">Quick Services ⚡</h2>
+    <p class="small" style="margin:0 0 18px;">Tap any service to get quote instantly.</p>
 
     <div class="grid">
       <div class="card">
-        <h3>📱 Phone</h3>
-        <p><a href="tel:+919043792188">+91 90437 92188</a></p>
+        <h3 style="margin:0 0 6px;font-family:Poppins,sans-serif;">Poster Designing</h3>
+        <p class="small">Business, event, ads & promo posters.</p>
+        <button class="btn btn-brand" onclick="openQuote()">Get Quote</button>
       </div>
 
       <div class="card">
-        <h3>📧 Email</h3>
-        <p><a href="mailto:janukabi2005@gmail.com">janukabi2005@gmail.com</a></p>
+        <h3 style="margin:0 0 6px;font-family:Poppins,sans-serif;">Digital Invitations</h3>
+        <p class="small">Wedding, birthday & function invites.</p>
+        <button class="btn btn-brand" onclick="openQuote()">Get Quote</button>
       </div>
 
       <div class="card">
-        <h3>💬 WhatsApp</h3>
-        <p><a href="https://wa.me/919043792188" target="_blank">Chat Now</a></p>
+        <h3 style="margin:0 0 6px;font-family:Poppins,sans-serif;">Server Support</h3>
+        <p class="small">Windows server troubleshooting & maintenance.</p>
+        <button class="btn btn-brand" onclick="openQuote()">Get Quote</button>
       </div>
-    </div>
-
-    <div style="margin-top:24px;text-align:center;">
-      <button class="btn btn-primary" onclick="openQuote()">Get Quote Now</button>
     </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>© <span id="year"></span> MK Tech • Tamil Nadu</p>
+    <p class="small">© <span id="year"></span> PixelCloud Tech • mktech.fun</p>
+    <p class="small">Design • Hosting • Support</p>
   </div>
 </footer>
+
+<a class="float-whatsapp" href="https://wa.me/919043792188" target="_blank" rel="noopener">💬</a>
 
 <!-- Quote Modal -->
 <div class="modal" id="quoteModal">
   <div class="modal-card">
     <div class="modal-head">
-      <h3>Request a Quote ✨</h3>
+      <h3 style="margin:0;font-family:Poppins,sans-serif;">Request a Quote ✨</h3>
       <button class="close-btn" onclick="closeQuote()">✕</button>
     </div>
 
@@ -85,13 +120,12 @@
         <div class="field">
           <label>Service *</label>
           <select id="service" required>
-            <option value="">Select</option>
-            <option>Poster Designing</option>
-            <option>Digital Invitation</option>
-            <option>Logo / Social Media Design</option>
-            <option>Web Hosting Setup</option>
-            <option>Domain + DNS + SSL</option>
-            <option>Server Support</option>
+            <option value="Poster Designing">Poster Designing</option>
+            <option value="Digital Invitations">Digital Invitations</option>
+            <option value="Social Media Designs">Social Media Designs</option>
+            <option value="Web Hosting Setup">Web Hosting Setup</option>
+            <option value="Domain + DNS + SSL">Domain + DNS + SSL</option>
+            <option value="Server Support">Server Support</option>
           </select>
         </div>
 
@@ -105,41 +139,21 @@
           <input id="date" type="date" />
         </div>
 
-        <div class="field" style="grid-column:1/-1;">
+        <div class="field" style="grid-column:1/-1">
           <label>Requirement *</label>
           <textarea id="message" required placeholder="Tell your requirement clearly..."></textarea>
         </div>
       </div>
 
-      <div class="form-actions">
-        <button class="btn btn-primary" type="submit">Send Quote</button>
-        <button class="btn btn-outline" type="button" onclick="closeQuote()">Cancel</button>
+      <div class="modal-actions">
+        <button class="btn btn-brand" type="submit">Send Quote</button>
+        <button class="btn" type="button" onclick="closeQuote()">Cancel</button>
       </div>
 
-      <p class="note">
-        ✅ After clicking <b>Send Quote</b>, it will open WhatsApp + also send details to email.
-      </p>
+      <p class="small" style="margin-top:10px;">✅ After clicking Send Quote, it will open WhatsApp with your details.</p>
     </form>
   </div>
 </div>
-
-<!-- Hidden Email FormSubmit -->
-<form id="emailForm" action="https://formsubmit.co/janukabi2005@gmail.com" method="POST" style="display:none;">
-  <input type="hidden" name="_subject" value="New Quote Request - MK Tech" />
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_template" value="table" />
-  <input type="hidden" name="_next" value="https://mktech.fun/contact/" />
-
-  <input id="fs_name" type="hidden" name="Name" />
-  <input id="fs_phone" type="hidden" name="Phone" />
-  <input id="fs_email" type="hidden" name="Email" />
-  <input id="fs_service" type="hidden" name="Service" />
-  <input id="fs_budget" type="hidden" name="Budget" />
-  <input id="fs_date" type="hidden" name="Needed Date" />
-  <input id="fs_message" type="hidden" name="Requirement" />
-</form>
-
-<script src="/app.js"></script>
 
 <script src="/app.js"></script>
 </body>
