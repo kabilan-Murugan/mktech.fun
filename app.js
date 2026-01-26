@@ -27,8 +27,8 @@ function handleQuoteSubmit(e){
   const message = document.getElementById("message").value.trim();
 
   const text =
-`Hi PixelCloud Tech 👋
-New Quote Request ✅
+`Hi PixelCloud Tech
+New Quote Request
 
 Name: ${name}
 Phone: ${phone}
